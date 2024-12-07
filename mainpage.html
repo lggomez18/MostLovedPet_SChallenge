@@ -37,6 +37,21 @@
         font-weight: 300;
         font-style: normal;
       }
+
+      body{
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      /*Header*/
+      .card-img{
+        height:31.25rem;
+        object-fit:cover;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
 </style>
 
 <body>
@@ -93,16 +108,38 @@
         <div class="header-slider text-center">
             <!--Slider-->
             <div class="card border-0 rounded-4 overflow-hidden">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/195/original/pexels-mikhail-nilov-7474346.jpg?1733542567" alt="header image" class="card-img parallax-img"
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/195/original/pexels-mikhail-nilov-7474346.jpg?1733542567" alt="header image" class="card-img parallax-img opacity-75"/>
+            <!--Flex container-->
+            <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay bg-dark bg-opacity-25">
+              <div class="w-75">
+                <label for="" class="d-inline-block bg-px-4 py-2 text-white bg-dark rounded-pill">Blog</label>
+                <h1 class="mt-2 card-title">Personal happiness can be affected by cultural factors</h1>
+                <p class="card-text">[ADD A PARAGRAPH HERE]</p>
+            </div>  
+            </div>
+            <!--/Flex container-->    
             </div> 
             <!--/Slider-->
+             <!--Slider2-->
+             <div class="card border-0 rounded-4 overflow-hidden">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/195/original/pexels-mikhail-nilov-7474346.jpg?1733542567" alt="header image" class="card-img parallax-img opacity-75"/>
+                <!--Flex container-->
+                <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay bg-dark bg-opacity-25">
+                  <div class="w-75">
+                    <label for="" class="d-inline-block bg-px-4 py-2 text-white bg-dark rounded-pill">Blog</label>
+                    <h1 class="mt-2 card-title">Personal happiness can be affected by cultural factors</h1>
+                    <p class="card-text">[ADD A PARAGRAPH HERE]</p>
+                </div>  
+                </div>
+                <!--/Flex container-->    
+                </div> 
+                <!--/Slider-->
         </div>
         <!--/Slider Container-->
 
 
     </header>
     <!--/Header-->
-
 
         <div class="container">
         <footer>
@@ -121,6 +158,21 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--Isotope JS-->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".header-slider").slick({
+                slidesToShow:1,
+                slidesToScroll:1,
+                autoplay:true,
+                autoplayspeed:5000,
+                arrows:false,
+                dots:true,
+                dotsClass:"slick-dots",
+
+            });
+        });
+    </script>
 
 </body>
 </html>
