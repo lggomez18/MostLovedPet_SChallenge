@@ -25,7 +25,7 @@
 </head>
 
 
-<styles>
+<style>
     .poppins-bold {
         font-family: "Poppins", serif;
         font-weight: 700;
@@ -37,30 +37,35 @@
         font-weight: 300;
         font-style: normal;
       }
-</styles>
+</style>
 
 <body>
     <!--NavBar-->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg  py-4">
         <div class="container">
-        <a href="#" class="navbar-brand mb-0 h1">
+    <!--NavBar Logo-->
+        <a href="#" class="navbar-brand fw-bold">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/155/original/Brown_Modern_Pet_House_Logo_copy.png?1733451209" 
-            class="d-inline-block align-top" width="50" height="50"/></a>
+            class="d-inline-block align-top" width="50" height="50"/>ATX Shelters</a>
+    <!--NavBar Logo-->
+    <!--NavBar Button - Mobile-->
         <button 
         class="navbar-toggler" 
         type="button" 
         data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
+        data-bs-target="#navbarMobile" 
         aria-controls="narbarNav" 
         aria-expanded="false" 
         aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <!--NavBar Links-->
+        <div class="collapse navbar-collapse" id="navbarMobile">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
                     <a href="#" class="nav-link active">Home</a>
                 </li>
+        <!--NavBar-Dropdown Menu-->
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" 
                     id="navbarDropdown" 
@@ -82,10 +87,13 @@
         </div>
         </div>
     </nav>
+    <!--Slider Container-->
     
+        <div class="container">
         <footer>
             Coded by Leticia Gmx 🇲🇽 Open-source Github 👽 Hosted on Netlify 💻
-          </footer>  
+          </footer> 
+        </div> 
     <!--simpleparallax--> 
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@6.0.1/dist/vanilla/simpleParallaxVanilla.umd.min.js"></script>
     <!--JQuery CDN-->
